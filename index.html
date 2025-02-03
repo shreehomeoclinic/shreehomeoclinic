@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Homeo Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #007bff;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .about {
+            background-color: #e9ecef;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #004aad;
+        }
+
+        .cta {
+            background-color: #004aad;
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .cta button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #004aad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        .contact {
+            background-color: #e9ecef;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #004aad;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .testimonial {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .testimonial blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 0;
+        }
+
+        .testimonial cite {
+            font-weight: bold;
+            color: #004aad;
+            margin-top: 5px;
+        }
+
+        .caduceus {
+            /* position: absolute; */
+            top: 50%;
+            width: 30px;
+            border-radius: 50%;
+
+        }
+
+        .dabbi {
+            width: 50%;
+            /* box-shadow: 8px 8px 15px rgba(0, 0, 0,); */
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+
+        }
+
+        i {
+            color: red;
+        }
+
+        .imgg {
+            width: 20%;
+            /* box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5); */
+        }
+
+        .dabbi1 {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+            /* margin-left: 50%; */
+            /* margin-right:50%; */
+
+            /* height: 10%; */
+        }
+
+        .clinic-box {
+            background: #fff;
+            padding: 20px;
+            max-width: 1400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+            line-height: 1.6;
+            align-items: center;
+
+        }
+
+        .i1 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .i2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="caduceus.jpg" class="caduceus">
+        <h1>Shree Homeo Clinic</h1>
+        <h3>ಶ್ರೀ ಹೋಮಿಯೋ ಕ್ಲಿನಿಕ್</h3>
+        <p>Transforming lives through simple health practices</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Why Homeopathy</a>
+        <a href="healing.html">Healing Gallery</a>
+        <a href="#appointment">Book Appointment</a>
+        <!-- <a href="blogs.html">Blogs</a> -->
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <!-- <p>Welcome to Shree Homeo Clinic, a trusted name in homeopathic healthcare since 2021. Established with a vision to provide holistic and effective healing, our clinic has been a beacon of hope for countless patients seeking natural remedies. At the heart of our clinic is Dr. Kiran Kumar, a dedicated and compassionate homeopathic practitioner with over three years of experience in the field. Dr.Kiran Kumar is committed to understanding the root cause of health issues and offering personalized treatments tailored to individual needs. Over the years, Shree Homeo Clinic has successfully healed numerous patients, restoring their health and happiness through safe and gentle homeopathy. Our approach emphasizes treating not just symptoms but the entire person, ensuring long-term wellness. The clinic is well-equipped and adheres to the highest standards of care, making it a trusted choice for families. We specialize in treating a wide range of conditions, from chronic illnesses to acute ailments, with proven homeopathic solutions. At Shree Homeo Clinic, patient satisfaction and well-being are our top priorities. Join us on a journey toward natural, effective, and lasting health with the power of homeopathy.</p> -->
+        <div class="clinic-box">
+            <h2>Welcome to Shree Homeo Clinic</h2>
+            <p>Shree Homeo Clinic has been a trusted name in homeopathic healthcare since 2021. Established with a
+                vision to provide holistic and effective healing, our clinic has been a beacon of hope for countless
+                patients seeking natural remedies.</p>
+            <p>At the heart of our clinic is Dr. Kiran Kumar, a dedicated and compassionate homeopathic practitioner
+                with over three years of experience in the field. He is committed to understanding the root cause of
+                health issues and offering personalized treatments tailored to individual needs.</p>
+            <p>Over the years, we have successfully healed numerous patients, restoring their health and happiness
+                through safe and gentle homeopathy. Our approach emphasizes treating not just symptoms but the entire
+                person, ensuring long-term wellness.</p>
+            <p>Join us on a journey toward natural, effective, and lasting health with the power of homeopathy.</p>
+            <img src="dabbi.jpg" class="dabbi1" alt="Doctor consulting patient">
+        </div>
+
+    </section>
+
+    <section id="services">
+        <h2>Why Homeopathy?</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="why2.jpg" alt="Holistic Healing">
+                <h3>Holistic Healing</h3>
+                <div class="i1">
+                    <p class="formatted-paragraph">Holistic healing under homeopathy focuses on treating the person as a
+                        whole rather than just the symptoms. It aims to restore balance in the mind, body, and spirit
+                        through natural remedies. By addressing the root causes of illnesses, homeopathy promotes
+                        long-term wellness and vitality. This gentle, personalized approach ensures safe and effective
+                        healing for people of all ages.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="why1.jpg" alt="Effective Remedies">
+                <h3>Effective Remedies</h3>
+                <div id="i2">
+                    <p class="formatted-paragraph">Effective remedies under homeopathy are tailored to each individual's
+                        unique needs, ensuring personalized care. These natural remedies work by stimulating the body’s
+                        self-healing abilities to combat illnesses. Safe and gentle, homeopathy offers solutions for
+                        both acute and chronic conditions without harmful side effects. With a focus on long-term
+                        well-being, it provides effective and sustainable health improvements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Healing Journeys</h2>
+        <div class="testimonial">
+            <img src="person.jpg" alt="Samira H.">
+            <blockquote>"Homeopathy helped me regain energy and balance my thyroid levels. I feel full of life again!"
+            </blockquote>
+            <cite>- A healed individual from Shree Homeo Clinic</cite>
+        </div>
+        <div class="testimonial">
+            <img src="person.jpg" alt="Parker G.">
+            <blockquote>"After turning to homeopathy, my arthritis pain reduced significantly. It transformed my daily
+                life!"</blockquote>
+            <cite>- A healed individual from Shree Homeo Clinic</cite>
+        </div>
+        <a href="healing.html"> <button class="but">See Healing In Action>>></button></a>
+    </section>
+
+    <section id="appointment" class="cta">
+
+        <!-- <img src="appointment.jpg" alt="Book appointment illustration"> -->
+        <h2 style="color: white;">Book an Appointment</h2>
+        <p>Schedule your appointment with ease. Quick, simple, and hassle-free!</p>
+        <a href="https://book.healthplix.com/dr-dr-kiran-kumar-g-homeopathic-bangalore-division?utm_source=gmb_cta&hl=en-IN&gei=RUegZ6vTJIjRg8UPk6fD2QY&rwg_token=AAiGsoaG404QqDP1KW7OuTcdsPbQ59jIiDuX8JDNwRb11BkkVqpGdIasPyke12ehlvRXT-8GmztnoVZfuQ5TaR_qKAaiOiCPiQ%3D%3D"
+            > <button>Schedule Now</button></a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <img src="contactus.jpg" class="dabbi" alt="Contact Us">
+        <p><b>Address:</b> 1st Floor, Sri Nandhikeshwara Complex, opp. to BMTC Bus Depot, <br> Puttenahalli, Yelahanka,
+            Bengaluru, Karnataka 560064</p>
+        <p><b>Email: </b>homeoclinicshree@gmail.com</p>
+        <p><b>Phone:</b> +91 8660208564</p>
+        <i class="fa-solid fa-location-dot"></i>Location</a><br>
+        <a href="https://maps.app.goo.gl/EfXJUzBNwGSzoqdo6" target="_blank"><img src="location.png" class="imgg"
+                alt="location-map"></a>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Shree Homeo Clinic. All rights reserved.</p>
+        <a href="#">Privacy Policy</a>
+    </footer>
+</body>
+
+</html>
