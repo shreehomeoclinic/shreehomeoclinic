@@ -24,6 +24,39 @@
 
         nav {
             display: flex;
+            justify-content: space-around;
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        /* Responsive design for mobile */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                /* Stack the items vertically */
+                align-items: center;
+            }
+
+            nav a {
+                padding: 15px;
+                font-size: 18px;
+                /* Adjust the font size */
+                width: 100%;
+                /* Make the links take up full width */
+                text-align: center;
+                /* Center the text */
+            }
+        }
+
+        /* nav {
+            display: flex;
             justify-content: center;
             background: #007bff;
             padding: 10px 0;
@@ -34,7 +67,7 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: 500;
-        }
+        } */
 
         section {
             padding: 40px;
@@ -198,8 +231,6 @@
             gap: 20px;
             flex-wrap: wrap;
         }
-
-        
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -292,8 +323,9 @@
         <!-- <img src="appointment.jpg" alt="Book appointment illustration"> -->
         <h2 style="color: white;">Book an Appointment</h2>
         <p>Schedule your appointment with ease. Quick, simple, and hassle-free!</p>
-        <a href="https://book.healthplix.com/dr-dr-kiran-kumar-g-homeopathic-bangalore-division?utm_source=gmb_cta&hl=en-IN&gei=RUegZ6vTJIjRg8UPk6fD2QY&rwg_token=AAiGsoaG404QqDP1KW7OuTcdsPbQ59jIiDuX8JDNwRb11BkkVqpGdIasPyke12ehlvRXT-8GmztnoVZfuQ5TaR_qKAaiOiCPiQ%3D%3D"
-            > <button>Schedule Now</button></a>
+        <a
+            href="https://book.healthplix.com/dr-dr-kiran-kumar-g-homeopathic-bangalore-division?utm_source=gmb_cta&hl=en-IN&gei=RUegZ6vTJIjRg8UPk6fD2QY&rwg_token=AAiGsoaG404QqDP1KW7OuTcdsPbQ59jIiDuX8JDNwRb11BkkVqpGdIasPyke12ehlvRXT-8GmztnoVZfuQ5TaR_qKAaiOiCPiQ%3D%3D">
+            <button>Schedule Now</button></a>
     </section>
 
     <section id="contact" class="contact">
